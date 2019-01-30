@@ -1,0 +1,119 @@
+/*HEADING*/
+.heading {
+  color: $color-primary;
+  background-image: linear-gradient(to top, $color-secondary, $color-tertiary);
+  width: 100%;
+  margin: 0;
+  background-position: top;
+  position: relative;
+  text-align: center;
+  padding-top: 10rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
+  &__greeting-h1 {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__cloud-1 {
+    position: absolute;
+    right: 20%;
+    top: 5rem;
+    box-shadow: 0 4px 2px -4px black;
+    animation: moveInRight 1s ease-out 1s;
+    animation-fill-mode: backwards;
+  }
+
+  &__cloud-2 {
+    position: absolute;
+    left: 20%;
+    bottom: 30rem;
+    box-shadow: 0 4px 2px -4px $color-black;
+    animation: moveInLeft 1s ease-out 1s;
+    animation-fill-mode: backwards;
+  }
+
+  &__mountain {
+    margin: 0;
+    width: 60%;
+    height: auto;
+  }
+}
+
+/*INTRO CONTAINER*/
+.middle-container {
+  padding: 15rem 0;
+  margin-top: -20vh;
+}
+
+.prof-img {
+  border-radius: 50%;
+  margin-bottom: 3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+  margin: auto;
+  width: 70%;
+}
+
+/*SKILLS CONTAINER*/
+.skills {
+  margin: 2rem auto 4rem;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 5rem auto;
+  text-align: left;
+
+  @include respond(tab-port) {
+    width: 70%;
+  }
+}
+
+.code-vector {
+  width: 25%;
+  border-radius: 50%;
+  float: left;
+  margin-right: 3rem;
+}
+
+.comp-vector {
+  width: 25%;
+  border-radius: 50%;
+  float: right;
+  margin-left: 3rem;
+}
+
+/*CONTACT ME*/
+.contact-me {
+  margin: 2rem auto 4rem;
+  line-height: 2;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 4rem auto 6rem;
+
+  @include respond(tab-port) {
+    width: 70%;
+  }
+}
+
+/*FOOTER*/
+.bottom-container {
+  background-image: linear-gradient(to top, $color-tertiary, $color-secondary);
+  padding: 5rem;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  padding: 2rem 0 1rem;
+}

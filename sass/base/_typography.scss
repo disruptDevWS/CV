@@ -1,0 +1,39 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: $color-secondary;
+}
+
+h1 {
+  font-family: "Tinos", sans-serif;
+  letter-spacing: 1.5rem;
+  font-size: 6rem;
+  line-height: 2;
+}
+
+h2 {
+  font-family: "Tinos", sans-serif;
+  font-size: 4rem;
+  line-height: 2;
+  color: $color-primary;
+}
+
+h3 {
+  font-family: "Tinos", sans-serif;
+  color: $color-secondary;
+  line-height: 2;
+}
+
+h4 {
+  line-height: 2;
+  color: $color-tertiary;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+  color: $color-secondary;
+}

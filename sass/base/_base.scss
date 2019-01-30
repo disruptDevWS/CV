@@ -1,0 +1,70 @@
+/*GENERAL*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /*1rem = 10px*/
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px, 9/16 = 0.5625
+  }
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px, 8/16 = .50
+  }
+  @include respond(phone) {
+    //font-size inherited from tab-port
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12px, 12/16 = 75%
+  }
+}
+
+body {
+  margin: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+
+  @include respond(tab-port) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+h1 {
+  margin-top: 4rem;
+}
+
+h2 {
+  padding-bottom: 1rem;
+}
+
+a {
+  margin: 1rem 2rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-white;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: $color-tertiary;
+  border-width: 0.5rem;
+  width: 4%;
+  opacity: 0.5;
+  display: inline-block;
+  margin: 5rem auto;
+}
+
+li {
+  line-height: 2;
+  margin-left: 2.25rem;
+}
